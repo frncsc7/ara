@@ -81,7 +81,7 @@ module ara_soc import axi_pkg::*; import ara_pkg::*; #(
   localparam AxiPeriphStrbWidth = AxiPeriphDataWidth / 8;
 
   // Ariane's AXI port data width
-  localparam AxiNarrowDataWidth = ariane_pkg::DCACHE_LINE_WIDTH;
+  localparam AxiNarrowDataWidth = 256;
   localparam AxiNarrowStrbWidth = AxiNarrowDataWidth / 8;
   // Ara's AXI port data width
   localparam AxiWideDataWidth   = AxiDataWidth;
